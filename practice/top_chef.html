@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dinosaur Museum</title>
+<style>
+.grid{
+	display: grid;
+	height: 100vh;
+	grid: 
+		'head head' 100px 
+		'main side' 1fr
+		'foot foot' 200px
+		/1fr 200px;
+		gap: 10px
+}
+#header{
+	grid-area: head;
+	background-color: green;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+#footer{
+	grid-area: foot;
+	background-color: green;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+#Main{
+	grid-area: main;
+	background-color: green;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+#Side{
+	grid-area: side;
+	background-color: green;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+</style>
+	</head>
+	<body>
+		<div class="grid">
+		  <div id="header">Top</div>
+		  <div id="footer">Bottom</div>
+		  <div id="Main">Middle</div>
+		  <div id="Side">Right Side</div>
+		</div>
+	</body>
+</html>

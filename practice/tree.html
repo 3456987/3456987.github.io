@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html lang="en">                                                            
+        <head>                                                              
+                 <script src="../js/validate.js"></script>
+                 <title>A pretty holiday tree</title>
+<style>
+body{
+	background-image: linear-gradient(to bottom, #ab2280, #4722ab);
+}
+#container{
+	 position: relative;
+         background-color: white;
+         width: 600px;
+         height: 100vh;
+}
+#tree{
+	width: 0px;
+	height: 0px;
+	border-bottom: 70vh solid green;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+}
+#box{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	top: 400px;
+	left: 300px;
+}
+#star{
+	width: 300px;
+ 	 aspect-ratio: 1;
+ 	 background: #F8CA00;
+ 	 clip-path: polygon(50% 0,
+   	 calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+   	 calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+   	 calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+   	 calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)));
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+   */
+}
+
+</style>
+         </head>
+         <body>
+		 <h1>This is the best tree</h1>
+                  <div id="container">
+			  <div id="tree">
+				  <div id="box">
+			  <div id"star">
+			 </div>
+			  </div>
+ 			</div>
+                 </div>
+         </body>
+</html>

@@ -1,0 +1,22 @@
+
+table, th, tr, td{
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+body{
+    background-color: LemonChiffon;
+}
+h1{
+  background-color: BlanchedAlmond;}
+#info{
+    background-color: PapayaWhip;
+}
+
+.highlight{
+     background-color: Chartreuse;
+}
+
+#animals{
+    text-decoration: underline;
+    text-decoration: 
+}
