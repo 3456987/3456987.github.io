@@ -2,229 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Client Website Project Portfolio</title>
+  <title>Monica Lozano Caldera | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- INTERNAL CSS -->
-  <style>
-    /* ---------- Global Styles ---------- */
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background-color: #ffffff;
-      color: #111111;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* ---------- Header ---------- */
-    header {
-      background-color: #1f2933; /* dark blue-gray */
-      color: #ffffff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      margin: 0.3rem 0;
-    }
-
-    /* ---------- Main Content ---------- */
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      padding: 1.5rem;
-      border-radius: 6px;
-      background-color: #f9fafb; /* light gray background for sections */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
-      color: #111111;
-    }
-
-    section h3 {
-      margin-top: 1rem;
-      color: #374151; /* dark gray */
-    }
-
-    /* ---------- Lists ---------- */
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-
-    .checkin {
-      background-color: #f3f4f6;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-left: 4px solid #2563eb;
-    }
-
-    /* ---------- Footer ---------- */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e5e7eb;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- PAGE HEADER -->
-  <header>
-    <h1>Client Website Project</h1>
-    <p>Agile Web Development Portfolio</p>
-    <p><strong>Student:</strong> Jack Rojas | <strong>Class:</strong> ITD110</p>
-  </header>
+<nav>
+  <h1>MLC</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="goals.html">Goals</a></li>
+  </ul>
+</nav>
 
-  <main>
+<!-- Intro Section -->
+<section class="hero">
+  <h2>Welcome to Monica Lozano Caldera’s Portfolio</h2>
+  <p>All About Me</p>
+</section>
 
-    <!-- SECTION: PROJECT OVERVIEW -->
-    <section>
-      <h2>Project Overview</h2>
-      <p>
-        This project involved designing and building a website for a real client
-        using an agile software development process. The website was created using
-        HTML and CSS and focuses on clean design, usability, and accessibility.
-      </p>
-    </section>
+<!-- About Preview Section -->
+<section class="preview about-preview">
+  <img src="media/monica.jpg" alt="Photo of Monica Lozano Caldera">
+  <p>
+    I’m a bilingual, cross-cultural coach and an APS educator committed to leadership,
+    equity, and opportunity.
+  </p>
+  <a href="about.html" class="button">Learn More About Me</a>
+</section>
 
-    <!-- SECTION: CLIENT INFORMATION -->
-    <section>
-      <h2>Client Information</h2>
-      <p><strong>Client Name:</strong> __________________________</p>
-      <p><strong>Client Type:</strong> (business, club, portfolio, cause)</p>
-      <p><strong>Purpose of Website:</strong></p>
-      <ul>
-        <li>__________________________________</li>
-        <li>__________________________________</li>
-        <li>__________________________________</li>
-      </ul>
-    </section>
+<!-- Community Preview Section -->
+<section class="preview community-preview">
+  <h3>Community & Impact</h3>
+  <p>
+    I help create spaces where people feel heard, supported, and connected
+    to meaningful opportunities.
+  </p>
+  <a href="community.html" class="button">See My Community Work</a>
+</section>
 
-    <!-- SECTION: PHASE 1 -->
-    <section>
-      <h2>Phase 1: Discovery & Planning</h2>
-
-      <h3>Client Interview Summary</h3>
-      <ul>
-        <li><strong>Target Audience:</strong> ____________________</li>
-        <li><strong>Must-Have Features:</strong> ____________________</li>
-        <li><strong>Visual Preferences:</strong> ____________________</li>
-      </ul>
-
-      <h3>Design Mockup</h3>
-      <p>
-        Before writing any code, I created a design mockup to plan the layout and
-        user interface elements of the website.
-      </p>
-      <p><em>Mockup image goes here</em></p>
-      <!-- <img src="media/mockup.png" alt="Website design mockup"> -->
-    </section>
-
-    <!-- SECTION: PHASE 2 -->
-    <section>
-      <h2>Phase 2: Iterative Development</h2>
-
-      <h3>Client Check-Ins</h3>
-
-      <div class="checkin">
-        <p><strong>Check-In #1</strong></p>
-        <ul>
-          <li><strong>Date & Method:</strong> ____________________</li>
-          <li><strong>What Was Shown:</strong> ____________________</li>
-          <li><strong>Client Feedback:</strong> ____________________</li>
-          <li><strong>Agreed Changes:</strong> ____________________</li>
-        </ul>
-      </div>
-
-      <div class="checkin">
-        <p><strong>Check-In #2</strong></p>
-        <ul>
-          <li><strong>Date & Method:</strong> ____________________</li>
-          <li><strong>What Was Shown:</strong> ____________________</li>
-          <li><strong>Client Feedback:</strong> ____________________</li>
-          <li><strong>Agreed Changes:</strong> ____________________</li>
-        </ul>
-      </div>
-
-      <div class="checkin">
-        <p><strong>Check-In #3</strong></p>
-        <ul>
-          <li><strong>Date & Method:</strong> ____________________</li>
-          <li><strong>What Was Shown:</strong> ____________________</li>
-          <li><strong>Client Feedback:</strong> ____________________</li>
-          <li><strong>Agreed Changes:</strong> ____________________</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SECTION: PHASE 3 -->
-    <section>
-      <h2>Phase 3: Final Delivery</h2>
-      <ul>
-        <li>Final changes made based on client feedback</li>
-        <li>Website delivered using GitHub Pages</li>
-        <li>Client informed about how to copy and host the code</li>
-      </ul>
-    </section>
-
-    <!-- SECTION: ACCESSIBILITY -->
-    <section>
-      <h2>Accessibility & Standards</h2>
-      <ul>
-        <li>Semantic HTML elements used</li>
-        <li>High color contrast for readability</li>
-        <li>Alt text provided for images</li>
-        <li>Keyboard-friendly structure</li>
-        <li>WCAG AA standards considered</li>
-      </ul>
-    </section>
-
-    <!-- SECTION: REFLECTION -->
-    <section>
-      <h2>Reflection</h2>
-      <p>
-        This project helped me understand how real client feedback influences
-        design decisions and how agile development improves a website through
-        multiple iterations.
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Jack Rojas</p>
-  </footer>
+<footer>
+  <p>© 2026 Monica Lozano Caldera</p>
+</footer>
 
 </body>
 </html>
-
-
