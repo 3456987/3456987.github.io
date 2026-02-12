@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Heart</title>
+<style>
+heart{
+	border: black 1px solid;
+}
+</style>
+	</head>
+	<body>
+
+		<h1>This is a heart</h1>
+		<canvas id="heart" width="800" height="800">
+		</canvas>
+		<script>
+			const canvas = document.getElementById("canvas");
+			const ctx = canvas.getContext("2d");
+
+
+			// draw a green rectangle
+			ctx.fillStyle = "green";
+			ctx.fillRect(100,100,200,300);
