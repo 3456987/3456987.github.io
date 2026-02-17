@@ -68,6 +68,8 @@ ctx.fill();
 
 //============ PUPILS ==========
 ctx.fillStyle = "black";
+
+ctx.beginPath();
 ctx.arc(455, 275, 10, 0, Math.PI * 2);
 ctx.fill();
 
