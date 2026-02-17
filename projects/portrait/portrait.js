@@ -27,25 +27,7 @@ ctx.fill();
 
 ctx.beginPath();
 ctx.arc(545, 300, 30, 0, Math.PI * 2);
-ctx.fill();
-
-
-//========= HAIR SPIKES ========
-ctx.fillStyle = "black";
-
-function spike(x, y) {
-	ctx.beginPath();
-	ctx.moveTo(x, y);
-	ctx.lineTo(x + 27, y - 40);
-	ctx.lineTo(x + 53, y);
-	ctx.fill();
-}
-
-spike(240, 240);
-spike(320, 210);
-spike(400, 195);
-spike(480, 210);
-spike(560, 240);
+ctx.fill();:
 
 //=========== HAIR BASE =========
 ctx.fillStyle = "black";
