@@ -13,5 +13,12 @@ ctx.fillRect(0, 170, 800, 10);
 ctx.fillRect(0, 230, 800, 10);
 
 
+// ======= HEAD ==========
+ctx.fillStyle = "#C68642";
+ctx.beginPath();
+ctx.arc(400, 285, 125,0, Math.PI * 2);
+ctx.fill();
+
+
 
 
