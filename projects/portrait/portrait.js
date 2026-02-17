@@ -89,7 +89,7 @@ ctx.lineTo(380, 340);
 ctx.lineTo(420, 340);
 ctx.fill();
 
-//========== CHEEKS ===========
+//============= CHEEK SHADING ==========
 ctx.strokeStyle = "#a05a2c";
 
 ctx.beginPath();
@@ -97,7 +97,7 @@ ctx.arc(310, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 ctx.beginPath();
-cotx.arc(495, 320, 25, 0, Math.PI);
+ctx.arc(495, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 //============ MOUTH ====================
