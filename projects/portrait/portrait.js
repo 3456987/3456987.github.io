@@ -1,5 +1,5 @@
 const canvas = document.getElementBYId("myCanvas");
-const ctx = canvas.getContext("2d")
+const ctx = canvas.getContext("2d");
 
 
 <!-----BACKGROUD----->
