@@ -82,7 +82,7 @@ ctx.fillRect(315, 235, 67, 9)
 ctx.fillRect(420, 235, 67, 9)
 
 //=========== NOSE ==========
-ctx.fillStyle = "A0522D";
+ctx.fillStyle = "#A0522D";
 ctx.beginPath();
 ctx.moveTo(400, 300);
 ctx.lineTo(380, 340);
@@ -90,7 +90,23 @@ ctx.lineTo(420, 340);
 ctx.fill();
 
 //========== CHEEKS ===========
+ctx.strokeStyle = "#a05a2c";
 
+ctx.beginPath();
+ctx.arc(310, 320, 25, 0, Math.PI);
+ctx.stroke();
+
+ctx.beingPath();
+ctx.arc(495, 320, 35, 0, Math.PI);
+ctx.stroke();
+
+//============ MOUTH ====================
+ctx.strokeStyle = "black";
+ctx.beginPath();
+ctx.arc(400, 360, 40, 0, Math.PI);
+ctx.stroke();
+
+//============ NECK ==========
 
 
 
