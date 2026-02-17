@@ -41,13 +41,13 @@ ctx.fill();
 function spike(x, y) {
 	ctx.beginPath();
 	ctx.moveTo(x, y);
-	ctx.lineTo(x + 30, y - 40);
-	ctx.lineTo(x + 50, y);
+	ctx.lineTo(x + 27, y - 40);
+	ctx.lineTo(x + 53, y);
 	ctx.fill();
 }
 
-spike(290, 195);
-spike(350, 180);
-spike(400, 170);
-spike(450, 180);
-spike(510, 200);
+spike(293, 194);
+spike(347, 177);
+spike(400, 171);
+spike(453, 182);
+spike(507, 200);
