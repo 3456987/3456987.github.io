@@ -115,9 +115,19 @@ ctx.fillStyle = "red";
 ctx.fillRect(267, 485, 267, 183);
 
 //========= SHOULDERS ==============
+ctx.beginPath();
+ctx.moveTo(267, 485);
+ctx.lineTo(200, 571);
+ctx.lineTo(267, 571);
+ctx.fill();
 
+ctx.beginPath();
+ctx.moveTo(534, 485);
+ctx.lineTo(600, 571);
+ctx.lineTo(534, 571);
+ctx.fill();
 
-
+//======== COLLAR ========
 
 
 
