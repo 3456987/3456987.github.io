@@ -38,6 +38,8 @@ ctx.fill();
 
 
 //========= HAIR SPIKES ========
+ctx.fillStyle = "black";
+
 function spike(x, y) {
 	ctx.beginPath();
 	ctx.moveTo(x, y);
