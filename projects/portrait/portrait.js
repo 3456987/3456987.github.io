@@ -27,7 +27,7 @@ ctx.fill();
 
 ctx.beginPath();
 ctx.arc(545, 300, 30, 0, Math.PI * 2);
-ctx.fill();:
+ctx.fill();
 
 //=========== HAIR BASE =========
 ctx.fillStyle = "black";
