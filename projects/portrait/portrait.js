@@ -97,7 +97,7 @@ ctx.arc(310, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 ctx.beginPath();
-ctx.arc(495, 320, 25, 0, Math.PI);
+ctx.arc(494, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 //============ MOUTH ====================
@@ -107,7 +107,14 @@ ctx.arc(400, 360, 40, 0, Math.PI);
 ctx.stroke();
 
 //============ NECK ==========
+ctx.fillStyle = "#C68642";
+ctx.fillRect(367, 400, 67, 80);
 
+//=========== SHIRT ============
+ctx.fillStyle = "red";
+ctx.fillRect(267, 485, 267, 183);
+
+//========= SHOULDERS ==============
 
 
 
