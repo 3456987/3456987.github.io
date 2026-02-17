@@ -30,13 +30,6 @@ ctx.arc(545, 300, 30, 0, Math.PI * 2);
 ctx.fill();
 
 
-//=========== HAIR BASE =========
-ctx.fillStyle = "black";
-ctx.beginPath();
-ctx.arc(400, 230, 137, Math.PI, 0);
-ctx.fill();
-
-
 //========= HAIR SPIKES ========
 ctx.fillStyle = "black";
 
@@ -54,6 +47,11 @@ spike(400, 171);
 spike(453, 182);
 spike(507, 200);
 
+//=========== HAIR BASE =========
+ctx.fillStyle = "black";
+ctx.beginPath();
+ctx.arc(400, 229, 137, Math.PI, 0);
+ctx.fill();
 
 //============ EYES ===============
 ctx.fillStyle = "white";
