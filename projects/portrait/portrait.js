@@ -41,11 +41,11 @@ function spike(x, y) {
 	ctx.fill();
 }
 
-spike(293, 194);
-spike(347, 177);
-spike(400, 171);
-spike(453, 182);
-spike(507, 200);
+spike(240, 240);
+spike(320, 210);
+spike(400, 195);
+spike(480, 210);
+spike(560, 240);
 
 //=========== HAIR BASE =========
 ctx.fillStyle = "black";
