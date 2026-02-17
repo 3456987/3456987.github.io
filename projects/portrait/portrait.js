@@ -51,3 +51,19 @@ spike(347, 177);
 spike(400, 171);
 spike(453, 182);
 spike(507, 200);
+
+
+//============ EYES ===============
+ctx.fillStyle = "white";
+
+//right eye
+ctx.beginPath();
+ctx.arc(455, 275, 25, 0, Math.PI * 2);
+ctx.fill();
+
+//left eye
+ctx.beginPath();
+ctx.arc(350, 275, 25, 0, Math.PI * 2);
+ctx.fill();
+
+//============ PUPILS ==========
