@@ -96,7 +96,7 @@ ctx.beginPath();
 ctx.arc(310, 320, 25, 0, Math.PI);
 ctx.stroke();
 
-ctx.beingPath();
+ctx.beginPath();
 cotx.arc(495, 320, 25, 0, Math.PI);
 ctx.stroke();
 
