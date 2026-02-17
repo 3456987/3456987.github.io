@@ -2,7 +2,7 @@ const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 
-<!-----BACKGROUD----->
+/* BackGround */
 ctx.fillStyle = "d9d9d9";
 ctx.fillRect(0, 0, 800, 800);
 
