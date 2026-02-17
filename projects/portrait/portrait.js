@@ -67,3 +67,20 @@ ctx.arc(350, 275, 25, 0, Math.PI * 2);
 ctx.fill();
 
 //============ PUPILS ==========
+ctx.fillStyle = "black";
+ctx.arc(455, 275, 10, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(350, 275, 10, 0, MAth.PI * 2);
+ctx.fill();
+
+//=========== EYEBROWN
+
+
+
+
+
+
+
+
