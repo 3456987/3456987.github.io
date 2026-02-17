@@ -36,3 +36,18 @@ ctx.beginPath();
 ctx.arc(400, 230, 137, Math.PI, 0);
 ctx.fill();
 
+
+//========= HAIR SPIKES ========
+function spike(x, y) {
+	ctx.beginPath();
+	ctx.moveTo(x, y);
+	ctx.lineTo(x + 30, y - 40);
+	ctx.lineTo(x + 50, y);
+	ctx.fill();
+}
+
+spike(290, 195);
+spike(350, 180);
+spike(400, 170);
+spike(450, 180);
+spike(510, 200);
