@@ -77,7 +77,19 @@ ctx.beginPath();
 ctx.arc(350, 275, 10, 0, Math.PI * 2);
 ctx.fill();
 
-//=========== EYEBROWN
+//=========== EYEBROWS =======
+ctx.fillRect(115, 235, 67, 9)
+ctx.fillRect(420, 235, 67, 9)
+
+//=========== NOSE ==========
+ctx.fillStyle = "A0522D";
+ctx.beginPath();
+ctx.moveTo(400, 300);
+ctx.lineTo(380, 340);
+ctx.lineTo(420, 340);
+ctx.fill();
+
+//========== CHEEKS ===========
 
 
 
