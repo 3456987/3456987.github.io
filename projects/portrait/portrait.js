@@ -128,6 +128,28 @@ ctx.lineTo(534, 571);
 ctx.fill();
 
 //======== COLLAR ========
+ctx.strokeStyle = "black"
+ctx.beginPath();
+ctx.arc(400, 485, 53, 0, Math.PI);
+ctx.stroke();
 
+//========= ARMS ============
+ctx.fillStyle = "#C68642";
+
+//left arm
+ctx.beginPath();
+ctx.moveTo(200, 571);
+ctx.lineTo(150, 680);
+ctx.lineTo(210, 680);
+ctx.lineTo(267, 571);
+ctx.fill();
+
+//Right arm
+ctx.beginPath();
+ctx.moveTo(600, 571);
+ctx.lineTo(650, 680);
+ctx.lineTo(590, 680);
+ctx.lineTo(534, 571);
+ctx.fill();
 
 
