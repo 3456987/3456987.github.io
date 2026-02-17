@@ -78,7 +78,7 @@ ctx.arc(350, 275, 10, 0, Math.PI * 2);
 ctx.fill();
 
 //=========== EYEBROWS =======
-ctx.fillRect(115, 235, 67, 9)
+ctx.fillRect(315, 235, 67, 9)
 ctx.fillRect(420, 235, 67, 9)
 
 //=========== NOSE ==========
