@@ -97,7 +97,7 @@ ctx.arc(310, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 ctx.beingPath();
-ctx.arc(495, 320, 35, 0, Math.PI);
+cotx.arc(495, 320, 25, 0, Math.PI);
 ctx.stroke();
 
 //============ MOUTH ====================
