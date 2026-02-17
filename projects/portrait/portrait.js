@@ -20,5 +20,15 @@ ctx.arc(400, 285, 125,0, Math.PI * 2);
 ctx.fill();
 
 
+//======== EARS ========
+ctx.beginPath();
+ctx.arc(250, 300, 30, 0, Math.PI * 2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(545, 300, 30, 0, Math.PI * 2);
+ctx.fill();
+
+
 
 
