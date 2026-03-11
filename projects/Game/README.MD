@@ -2,7 +2,7 @@
 
 ## Setting
 
-This game takes place at the Arlington County Detention Facility. I tried to make the layout 
+This game takes place at the Arlington County Detention Facility. This layout would repelict a jail
 
 ## Map
 
