@@ -1,21 +1,19 @@
-# Chris Needs Coffee
+# Escape The Prison
 
 ## Setting
 
-This game takes place at the Arlington County Detention Facility. This layout would repelict a jail
-
+This game takes place in a prison, I tried to make as realistic as I could to a real prison, making it very hard to escape.  
 ## Map
 
 ```mermaid
 graph TD;
-    bus(((Bus)))<-->Commons;
-    Library<-->Commons;
-    Box<-->Cafeteria;
-    Cafeteria<-->Commons;
-    Commons<-->Outside;
-    Outside<-->Portable;
-    Portable<-->rm511;
-    Portable<-->Bathroom;
+    Prison_Cell<-->Cell_Hallway;
+    Cell_Hallway<-->Guard_Room;
+    Cell_Hallway<-->Cafeteria;
+    Cell_Hallway<-->Bathroom;
+    Cell_Hallway<-->Storage_Room;
+    Storage_Room<-->Prison_Yard;
+    Prison_Yard<-->Main_Gate_Escape;
 ```
 
 The player starts on the bus, and then is directed into the Commons. T
