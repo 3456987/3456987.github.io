@@ -1,4 +1,14 @@
 const canvas = document.getElementById("myCanvas");
 const ctx = canva.getContext("2nd");
 
-ctx.fillRect(100,100,50,50);
+let x = 0;
+let y = 0;
+function animate(){
+	x = x + 1;
+	y = y + 2;
+	ctx.fillRect(x,y,50,50);
+	requestAnimationFrame(animate);
+}
+
+
+animate();
