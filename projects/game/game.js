@@ -111,5 +111,34 @@ function storage(){
 	waitForInput(processInput);
 }
 
+//Guard Room 
+function guardRoom(){
+	clear();
+	print"\nYou sneak into the guard room.");
+	
+	if(!screwdriver && !guardKey){
+		print("\nYou use the screwdriver to open a locker.");
+		print("\nInside is the MAIN GATE KEY!");
+		guardKey = true;
+	}
+	else if(!screwdriver){
+		print("\nThere is a locked locker here. You need a tool.");
+	}
 
+	print("\Type 'hallway' to go back.");
+
+	function processInput(input){
+
+		if(input.toLowerCase() === "hallway"){
+			passTime();
+			hallway();
+		}else{
+			stayHere();
+			waitThenCall(GuardRoom);
+		}
+	}
+	waitForInput(processInput);
+}
+
+//
 
