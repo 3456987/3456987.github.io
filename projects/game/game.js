@@ -95,11 +95,19 @@ function storage(){
 		screwdriver = true;
 	}
 
-	print("\nType 'hallway' to go back.");
+	print("\nWhere do you go?");
+	print("\n\tHallway");
+	print("\n\tYard");
 
 	function processInput(input){
 	
-		if(input.toLowerCase() === "hallway"){
+		input  input.toLowerCase() 
+
+		if(input === "hallway"){
+			passTime();
+			hallway();
+		}
+		else if(input === "yard"){
 			passTime();
 			hallway();
 		}else{
