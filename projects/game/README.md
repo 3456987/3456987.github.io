@@ -7,13 +7,13 @@ This game takes place in a prison, I tried to make as realistic as I could to a 
 
 ```mermaid
 graph TD;
-    Prison Cell<-->Cell Hallway;
-    Cell Hallway<-->Guard Room;
-    Cell Hallway<-->Cafeteria;
-    Cell Hallway<-->Bathroom;
-    Cell Hallway<-->Storage Room;
-    Storage Room<-->Prison Yard;
-    Prison Yard<-->Main Gate;
+    Prison_Cell<-->Cell_Hallway;
+    Cell_Hallway<-->Guard_Room;
+    Cell_Hallway<-->Cafeteria;
+    Cell_Hallway<-->Bathroom;
+    Cell_Hallway<-->Storage_Room;
+    Storage_Room<-->Prison_Yard;
+    Prison_Yard<-->Main_Gate;
 ```
 
 The prisoner will start in their prison cell, which is directed to the Cell Hallway after the Hallway their many rooms to enter, but they should make their way to the Main gate. 
