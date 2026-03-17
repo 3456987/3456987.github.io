@@ -20,30 +20,18 @@ The prisoner will start in their prison cell, which is directed to the Cell Hall
 
 ## Story
 
-When the user gets to rm511, they learn that the teacher is asleep.
-They must take the teacher's coffee mug to the library, get it 
-filled, and then bring it back to the teacher.
+Your a Prisoner and you wake up in your cell one night at 10:00pm all the guards are gone, but the prison is still locked down. You have to explore different parts of the prison to find a srewdriver, using the srewdriver to break the locker of the guard, to find the key and escape through the main gate and also eatfood so you don't get hungray.
 
-The game starts 15 minutes before the morning class bell, and each
-move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
-
+The Prisoner also wakes up at 10:00pm and the guards clock back in at 7pm so the prisoner only has 9 hours to escape and every move costs 1 hour. So you only have 9 moves to complete this.
+  
 ## Global Variables
 
-The most important variables are
-`haveCup` and `cupIsFull`, both
-booleans that track progress in the
-story. Depending on these two variables,
-some rooms will display different things. For example, if you walk into the
-library without the cup, it will prompt you to
-read. If you walk in with the cup, it will show
-the librarian filling the cup with coffee.
+I have 4 variables time, currentLocation, screwdriver, and guardKey.
 
-I also have numeric variables called `day` and `minute` which keep track of 
-time. `minute` starts at 0 and counts up
-with each move.
+currentLocaton: Will tell the current room the prisoner is in, so that the game can show the players their chocies.
 
-I have a little HUD map, and use a bunch of 
-boolean variables to control which
-rooms the player has discovered. A map is only displayed after the user
-visits it.
+time: Tracks the time during the escape. The game starts at 10pm and every move will cost 1 hour. If the time hits 7am the guards wake up and the player loses.
+
+screwdriver: A tool found in the storage room that willa llow the player to unlock the locker in the guards room.
+
+guardKey: The key needed to unlock the main gate and escape the prison. 
