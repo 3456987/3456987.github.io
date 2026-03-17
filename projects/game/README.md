@@ -7,17 +7,16 @@ This game takes place in a prison, I tried to make as realistic as I could to a 
 
 ```mermaid
 graph TD;
-    Prison_Cell<-->Cell_Hallway;
-    Cell_Hallway<-->Guard_Room;
-    Cell_Hallway<-->Cafeteria;
-    Cell_Hallway<-->Bathroom;
-    Cell_Hallway<-->Storage_Room;
-    Storage_Room<-->Prison_Yard;
-    Prison_Yard<-->Main_Gate_Escape;
+    Prison Cell<-->Cell Hallway;
+    Cell Hallway<-->Guard Room;
+    Cell Hallway<-->Cafeteria;
+    Cell Hallway<-->Bathroom;
+    Cell Hallway<-->Storage Room;
+    Storage Room<-->Prison Yard;
+    Prison Yard<-->Main Gate;
 ```
 
-The player starts on the bus, and then is directed into the Commons. T
-They can explore, but must eventually make their way to rm511.
+The prisoner will start in their prison cell, which is directed to the Cell Hallway after the Hallway their many rooms to enter, but they should make their way to the Main gate. 
 
 ## Story
 
