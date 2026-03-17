@@ -237,4 +237,13 @@ function gate(){
 }
 
 
+//Start Game
+function start(){
+	print("Welcome to Escape Jack's Prison!")
+	print("Press any key to start.");
 
+	function processInput(input){
+		prisonCell();
+	}
+	waitForInput(processInput);
+}
