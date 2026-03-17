@@ -20,7 +20,7 @@ The prisoner will start in their prison cell, which is directed to the Cell Hall
 
 ## Story
 
-Your a Prisoner and you wake up in your cell one night at 10:00pm all the guards are gone, but the prison is still locked down. You have to explore different parts of the prison to find a srewdriver, using the srewdriver to break the locker of the guard, to find the key and escape through the main gate and also eatfood so you don't get hungray.
+Your a Prisoner and you wake up in your cell one night at 10:00pm all the guards are gone, but the prison is still locked down. You have to explore different parts of the prison to find a srewdriver, using the srewdriver to break the locker of the guard, to find the key and escape through the main gate.
 
 The Prisoner also wakes up at 10:00pm and the guards clock back in at 7pm so the prisoner only has 9 hours to escape and every move costs 1 hour. So you only have 9 moves to complete this.
   
