@@ -102,7 +102,7 @@ function storage(){
 
 	function processInput(input){
 	
-		input =  input.toLowerCase() 
+		input =  input.toLowerCase();
 
 		if(input === "hallway"){
 			passTime();
@@ -110,7 +110,7 @@ function storage(){
 		}
 		else if(input === "yard"){
 			passTime();
-			hallway();
+			yard();
 		}else{
 			stayHere();
 			waitThenCall(storage);
@@ -123,9 +123,9 @@ function storage(){
 //Guard Room 
 function guardRoom(){
 	clear();
-	print"\nYou sneak into the guard room.");
+	print("\nYou sneak into the guard room.");
 	
-	if(!screwdriver && !guardKey){
+	if(screwdriver && !guardKey){
 		print("\nYou use the screwdriver to open a locker.");
 		print("\nInside is the MAIN GATE KEY!");
 		guardKey = true;
@@ -134,7 +134,7 @@ function guardRoom(){
 		print("\nThere is a locked locker here. You need a tool.");
 	}
 
-	print("\Type 'hallway' to go back.");
+	print("\nType 'hallway' to go back.");
 
 	function processInput(input){
 
@@ -143,7 +143,7 @@ function guardRoom(){
 			hallway();
 		}else{
 			stayHere();
-			waitThenCall(GuardRoom);
+			waitThenCall(guardRoom);
 		}
 	}
 	waitForInput(processInput);
@@ -237,7 +237,7 @@ function gate(){
 		print("\nThe gate is locked.");
 		print("\nYou need the guard key.");
 
-		functions processInput(input){
+		function processInput(input){
 			hallway();
 		}
 
@@ -256,3 +256,4 @@ function start(){
 	}
 	waitForInput(processInput);
 }
+start();
