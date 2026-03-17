@@ -31,7 +31,6 @@ function prisonCell(){
 	function processInput(input){
 
 		if (input.toLowerCase() === "hallway"){
-			passTime();
 			hallway();
 		}else{
 			stayHere();
@@ -44,6 +43,7 @@ function prisonCell(){
 
 //Hallway
 function hallway(){
+	passTime();
 	clear();
 	print("\nYou are in the prison hallway.");
 	print("\nWhere do you go?");
@@ -58,23 +58,18 @@ function hallway(){
 		input = input.toLowerCase();
 		
 		if(input === "guard room"){
-			passTime();
 			guardRoom();
 		}
 		else if(input === "cafeteria"){
-			passTime();
 			cafeteria();
 		}
 		else if(input === "bathroom"){
-			passTime();
 			bathroom();
 		}
 		else if(input === "storage"){
-			passTime();
 			storage();
 		}
 		else if(input === "cell"){
-			passTime();
 			prisonCell();
 		}
 		else{
@@ -88,6 +83,7 @@ function hallway(){
 
 //Storage Room
 function storage(){
+	passTime();
 	clear();
 	print("\nYou enter the storage room.");
 
@@ -105,11 +101,9 @@ function storage(){
 		input =  input.toLowerCase();
 
 		if(input === "hallway"){
-			passTime();
 			hallway();
 		}
 		else if(input === "yard"){
-			passTime();
 			yard();
 		}else{
 			stayHere();
@@ -122,6 +116,7 @@ function storage(){
 
 //Guard Room 
 function guardRoom(){
+	passTime();
 	clear();
 	print("\nYou sneak into the guard room.");
 	
@@ -139,7 +134,6 @@ function guardRoom(){
 	function processInput(input){
 
 		if(input.toLowerCase() === "hallway"){
-			passTime();
 			hallway();
 		}else{
 			stayHere();
@@ -151,6 +145,7 @@ function guardRoom(){
 
 //Caferteria
 function cafeteria(){
+	passTime();
 	clear();
 	print("\nYou are in the prison cafeteria.");
 	print("\nThere is nothing useful here.");
@@ -160,7 +155,6 @@ function cafeteria(){
 	function processInput(input){
 
 		if(input.toLowerCase() === "hallway"){
-			passTime();
 			hallway();
 		}else{
 			stayHere();
@@ -174,6 +168,7 @@ function cafeteria(){
 
 // Bathroom
 function bathroom(){
+	passTime();
 	clear();
 	print("\nYou are in the prison bathroom.");
 	print("\nIt smells terrible.");
@@ -183,7 +178,6 @@ function bathroom(){
 	function processInput(input){
 
 		if(input.toLowerCase() === "hallway"){
-			passTime();
 			hallway();
 		}else{
 			stayHere();
@@ -196,6 +190,7 @@ function bathroom(){
 
 //Prison Yard
 function yard(){
+	passTime();
 	clear();
 	print("\nYou sneak outside into the prison yard.")
 	print("\nYou see the main gate.");
@@ -207,11 +202,9 @@ function yard(){
 		input = input.toLowerCase();
 
 		if(input === "gate"){
-			passTime();
 			gate();
 		}
 		else if(input === "hallway"){
-			passTime();
 			hallway();
 		}
 		else{
@@ -225,6 +218,7 @@ function yard(){
 
 //Main Gate
 function gate(){
+	passTime();
 	clear();
 
 	if (guardKey){
