@@ -1,55 +1,32 @@
-let gameActive = true; //this variable is required. 
-                       //to stop the game, set it to false.
+let gameActive = true;
+// Global Varibales
+let time = 22; //10pm
+let screwdriver = false;
+let guardKey = false;
 
-//Declare your other global variables here
+//Function for time
+function passtime(){
+	time++;
 
+	if(time ===24){
+		time = 0;
+	}
 
-//If you need, add any "helper" functions here
-
-
-//Make one function for each location
-function locationA() {
-    clear();
-    print("\nYou are in location A!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
-    
-    function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
-        } else {
-            stayHere();
-            waitThenCall(locationA);
-        }
-    }
-    waitForInput(processInput);
+	if(time >= 7 && time <12){
+		print("\nIt is now 7 Am. The guards wake up and catch you.")
+		print("\nGAME OVER.")
+		gameActive = false;
+	}
 }
 
-function locationB() {
-    clear();
-    print("\nYou are in location B!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
-    
-    function processInput(input){
-        if (input.toLowerCase() === "locationa") {
-            locationA();
-        } else {
-            stayHere();
-            waitThenCall(locationB);
-        }
-    }
-    waitForInput(processInput);
-}
 
-//finally, make sure you customize this to tell it what should happen at the
-//very start. For this simple example, any input will bring you
-//to locationA
-function start(){
-    print("Welcome to my game! Press any key to start");
+//Starting Room (Prison Cell)
+function prisonCell(){
+	clear();
+	print("\nYou wake up in your prison cell.");
+	print("\nIt is 10 PM. You must escape before 7 AM.");
+	print("\nWhere do you go?");
+	print("\n\tHallway");
 
-    function processInput(input){
-            locationA();
-    }
-    waitForInput(processInput);
-}
+
+
