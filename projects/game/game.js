@@ -5,14 +5,14 @@ let screwdriver = false;
 let guardKey = false;
 
 //Function for time
-function passtime(){
+function passTime(){
 	time++;
 
-	if(time ===24){
+	if(time === 24){
 		time = 0;
 	}
 
-	if(time >= 7 && time <12){
+	if(time >= 7 && time < 12){
 		print("\nIt is now 7 Am. The guards wake up and catch you.")
 		print("\nGAME OVER.")
 		gameActive = false;
@@ -27,6 +27,7 @@ function prisonCell(){
 	print("\nIt is 10 PM. You must escape before 7 AM.");
 	print("\nWhere do you go?");
 	print("\n\tHallway");
+
 	function processInput(input){
 
 		if (input.toLowerCase() === "hallway"){
@@ -66,15 +67,15 @@ function hallway(){
 		}
 		else if(input === "bathroom"){
 			passTime();
-			cafeteria();
+			bathroom();
 		}
 		else if(input === "storage"){
 			passTime();
-			cafeteria();
+			storage();
 		}
 		else if(input === "cell"){
 			passTime();
-			prisoCell();
+			prisonCell();
 		}
 		else{
 			stayHere();
@@ -101,7 +102,7 @@ function storage(){
 
 	function processInput(input){
 	
-		input  input.toLowerCase() 
+		input =  input.toLowerCase() 
 
 		if(input === "hallway"){
 			passTime();
