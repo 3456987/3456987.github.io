@@ -36,7 +36,10 @@ function prisonCell(){
 			stayHere();
 			waitThenCall(prisonCell);
 		}
-	}	
+	}
+
+	waitForInput(processInput)
+}
 
 //Hallway
 function hallway(){
@@ -48,6 +51,65 @@ function hallway(){
 	print("\n\tBathroom");
 	print("\n\tStorage");
 	print("\n\tCell");
+	
+	function processInput(input){
+
+		input = input.toLowerCase();
+		
+		if(input === "guard room"){
+			passTime();
+			guardRoom();
+		}
+		else if(input === "cafeteria"){
+			passTime();
+			cafeteria();
+		}
+		else if(input === "bathroom"){
+			passTime();
+			cafeteria();
+		}
+		else if(input === "storage"){
+			passTime();
+			cafeteria();
+		}
+		else if(input === "cell"){
+			passTime();
+			prisoCell();
+		}
+		else{
+			stayHere();
+			waitThenCall(hallway);
+		}
+	}
+
+	waitForInput(processInput);
+}
+
+//Storage Room
+function storage(){
+	clear();
+	print("\nYou enter the storage room.");
+
+	if(!screwdriver){
+		print("\nYou find a screwdriver on a shelf.");
+		screwdriver = true;
+	}
+
+	print("\nType 'hallway' to go back.");
+
+	function processInput(input){
+	
+		if(input.toLowerCase() === "hallway"){
+			passTime();
+			hallway();
+		}else{
+			stayHere();
+			waitThenCall(storage);
+		}
+	}
+
+	waitForInput(processInput);
+}
 
 
 
