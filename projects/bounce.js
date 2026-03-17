@@ -1,5 +1,5 @@
 const canvas = document.getElementById("myCanvas");
-const ctx = canva.getContext("2nd");
+const ctx = canva.getContext("2d");
 
 let x = 0;
 let y = 0;
