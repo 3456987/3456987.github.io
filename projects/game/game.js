@@ -43,8 +43,8 @@ function prisonCell(){
 
 //Hallway
 function hallway(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou are in the prison hallway.");
 	print("\nWhere do you go?");
 	print("\n\tGuard Room");
@@ -83,8 +83,8 @@ function hallway(){
 
 //Storage Room
 function storage(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou enter the storage room.");
 
 	if(!screwdriver){
@@ -116,8 +116,8 @@ function storage(){
 
 //Guard Room 
 function guardRoom(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou sneak into the guard room.");
 	
 	if(screwdriver && !guardKey){
@@ -145,8 +145,8 @@ function guardRoom(){
 
 //Caferteria
 function cafeteria(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou are in the prison cafeteria.");
 	print("\nThere is nothing useful here.");
 
@@ -168,8 +168,8 @@ function cafeteria(){
 
 // Bathroom
 function bathroom(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou are in the prison bathroom.");
 	print("\nIt smells terrible.");
 	
@@ -190,8 +190,8 @@ function bathroom(){
 
 //Prison Yard
 function yard(){
-	passTime();
 	clear();
+	passTime();
 	print("\nYou sneak outside into the prison yard.")
 	print("\nYou see the main gate.");
 
@@ -218,8 +218,8 @@ function yard(){
 
 //Main Gate
 function gate(){
-	passTime();
 	clear();
+	passTime();
 
 	if (guardKey){
 		print("\nYou unlock the main gate.");
