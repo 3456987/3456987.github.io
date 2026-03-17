@@ -162,3 +162,27 @@ function cafeteria(){
 	waitForInput(processInput);
 }
 
+
+// Bathroom
+function bathroom(){
+	clear();
+	print("\nYou are in the prison bathroom.");
+	print("\nIt smells terrible.");
+	
+	print("\nType 'hallway' to go back.");
+
+	function processInput(input){
+
+		if(input.toLowerCase() === "hallway"){
+			passTime();
+			hallway();
+		}else{
+			stayHere();
+			waitThenCall(bathroom);
+		}
+	}
+
+	waitForInput(processInput);
+}
+
+
