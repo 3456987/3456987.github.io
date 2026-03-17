@@ -140,5 +140,25 @@ function guardRoom(){
 	waitForInput(processInput);
 }
 
-//
+//Caferteria
+function cafeteria(){
+	clear();
+	print("\nYou are in the prison cafeteria.");
+	print("\nThere is nothing useful here.");
+
+	print("\nType 'hallway' to go back.");
+
+	function processInput(input){
+
+		if(input.toLowerCase() === "hallway"){
+			passTime();
+			hallway();
+		}else{
+			stayHere();
+			waitThenCall(cafeteria);
+		}
+	}
+
+	waitForInput(processInput);
+}
 
