@@ -1,4 +1,4 @@
-const canvas = document.getElementById("c");
+const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 let x = 0;
@@ -23,6 +23,7 @@ function animate(){
 animate();
 //event handler
 function handleKeyDown(e){
+	e.preventDefault();
 	if(e.key == "ArrowDown){
 		y = y + vy;
 	}
