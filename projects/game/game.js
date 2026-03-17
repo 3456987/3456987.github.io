@@ -185,4 +185,56 @@ function bathroom(){
 	waitForInput(processInput);
 }
 
+//Prison Yard
+function yard(){
+	clear();
+	print("\nYou sneak outside into the prison yard.")
+	print("\nYou see the main gate.");
+
+	print("\nType 'gate' or 'hallway'.");
+
+	function processInput(input){
+
+		input = input.toLowerCase();
+
+		if(input === "gate"){
+			passTime();
+			gate();
+		}
+		else if(input === "hallway"){
+			passTime();
+			hallway();
+		}
+		else{
+			stayHere();
+			waitThenCall(yard);
+		}
+	}
+
+	waitForInput(processInput);
+}
+
+//Main Gate
+function gate(){
+	clear();
+
+	if (guardKey){
+		print("\nYou unlock the main gate.");
+		print("\nYou escape the prison before the guards wake up!");
+		print("\nYOU WIN!");
+		gameActive = false;
+	}
+	else{
+		print("\nThe gate is locked.");
+		print("\nYou need the guard key.");
+
+		functions processInput(input){
+			hallway();
+		}
+
+		waitForInput(processInput);
+	}
+}
+
+
 
