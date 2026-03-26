@@ -27,6 +27,19 @@ canvas = document.getElementById("canvas3");
 ctx = canvas.getContext("2d");
 
 //fill in code for canvas3 here
+for(let y = 0; y < 800; y += 100){
+
+    for(let x = 0; x < 800; x += 100){
+        if(x == y){
+            continue
+        } else{
+            ctx.fillRect(x, y, 50, 20)
+        }
+
+    }
+
+
+}
 
 canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
