@@ -45,3 +45,20 @@ canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
 
 //fill in code for canvas4 here
+let i = 0;
+for(let y = 0; y < 800; y += 100){
+
+    for(let x = 0; x < 800; x += 200){
+
+        ctx.fillRect(x + sk, y, 100, 100)
+
+
+    }
+    if (i==0){
+        i += 100
+    } else{
+        i = 0
+    }
+
+
+}
