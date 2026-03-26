@@ -12,9 +12,10 @@ ctx = canvas.getContext("2d");
 
 //fill in code for canvas2 here
 for(let y = 150; y <= 800; y += 150){
-	ctx.fillRect(0, y, 50, 20)
+	for(let x = 0; x < 800; x += 100){
+	ctx.fillRect(x, y, 50, 20)
 }
-
+}
 canvas = document.getElementById("canvas3");
 ctx = canvas.getContext("2d");
 
