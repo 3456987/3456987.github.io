@@ -1,7 +1,21 @@
-const canvas = document.getElementById("myCanvas");
+
+canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 const ballRadius = 10;
+
+const ball = {
+	x:Math.random()*800,
+	y:Math.random()*800,
+	dx:2,
+	dx:-2
+}
+
+let x = Math.random()*800;
+let y = Math.random()*800;
+
+let dx2 = 2;
+let dy2 = -2;
 
 let x = Math.random()*800;
 let y = Math.random()*800;
@@ -67,6 +81,11 @@ function drawBall() {
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
   ctx.fill();
   ctx.closePath();
+
+  ctx.beginPath();
+  ctx.arc(x2, y2, ballRadius, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.closePath();
 }
 function drawPaddle() {
   ctx.beginPath();
@@ -88,6 +107,12 @@ function draw() {
     dy = -dy;
   }
 
+  if (x2 + dx2 > canvas.width - ballRadius || x + dx < ballRadius) {
+    dx2 = -dx2;
+  }
+  if (y2 + dy2 < ballRadius || y + dy > canvas.height - ballRadius) {
+    dy2 = -dy2;
+  
   if (rightPressed && paddleX < canvas.width - paddleWidth) {
     paddleX += 7;
   } else if (leftPressed && paddleX > 0) {
@@ -97,6 +122,9 @@ function draw() {
   //move the ball
   x += dx;
   y += dy;
+
+  x2 += dx2;
+  y2 += dy2;
 
   requestAnimationFrame(draw);
 }
