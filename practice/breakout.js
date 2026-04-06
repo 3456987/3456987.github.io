@@ -1,4 +1,3 @@
-
 canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -17,8 +16,8 @@ let y = Math.random()*800;
 let dx2 = 2;
 let dy2 = -2;
 
-let x = Math.random()*800;
-let y = Math.random()*800;
+let x2 = Math.random()*800;
+let y2 = Math.random()*800;
 
 let dx = 2;
 let dy = -2;
