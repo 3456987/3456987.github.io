@@ -99,11 +99,11 @@ function draw() {
   drawPaddle();
   drawBricks();
 
-  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-    dx = -dx;
+  if (ball.x + ball.dx > canvas.width - ballRadius || x + dx < ballRadius) {
+    ball.dx = ball.-dx;
   }
-  if (y + dy < ballRadius || y + dy > canvas.height - ballRadius) {
-    dy = -dy;
+  if (ball.y + ball.dy < ballRadius || y + dy > canvas.height - ballRadius) {
+    ball.dy = ball.-dy;
   }
 
   if (x2 + dx2 > canvas.width - ballRadius || x + dx < ballRadius) {
@@ -119,9 +119,10 @@ function draw() {
   }
 
   //move the ball
-  x += dx;
-  y += dy;
-
+	for(const ball of balls){
+  	ball.x += ball.dx;
+  	ball.y += ball.dy;
+	}
   x2 += dx2;
   y2 += dy2;
 

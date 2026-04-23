@@ -1,52 +1,37 @@
-# Chris Needs Coffee
+# Escape Jack's Prison
 
 ## Setting
 
-This game takes place at the Arlington County Detention Facility. This layout would repelict a jail
-
+This game takes place in a prison, I tried to make as realistic as I could to a real prison, making it very hard to escape.  
 ## Map
 
 ```mermaid
 graph TD;
-    bus(((Bus)))<-->Commons;
-    Library<-->Commons;
-    Box<-->Cafeteria;
-    Cafeteria<-->Commons;
-    Commons<-->Outside;
-    Outside<-->Portable;
-    Portable<-->rm511;
-    Portable<-->Bathroom;
+    Prison_Cell<-->Cell_Hallway;
+    Cell_Hallway<-->Guard_Room;
+    Cell_Hallway<-->Cafeteria;
+    Cell_Hallway<-->Bathroom;
+    Cell_Hallway<-->Storage_Room;
+    Storage_Room<-->Prison_Yard;
+    Prison_Yard<-->Main_Gate;
 ```
 
-The player starts on the bus, and then is directed into the Commons. T
-They can explore, but must eventually make their way to rm511.
+The prisoner will start in their prison cell, which is directed to the Cell Hallway after the Hallway their many rooms to enter, but they should make their way to the Main gate. 
 
 ## Story
 
-When the user gets to rm511, they learn that the teacher is asleep.
-They must take the teacher's coffee mug to the library, get it 
-filled, and then bring it back to the teacher.
+Your a Prisoner and you wake up in your cell one night at 10:00pm all the guards are gone, but the prison is still locked down. You have to explore different parts of the prison to find a srewdriver, using the srewdriver to break the locker of the guard, to find the key and escape through the main gate.
 
-The game starts 15 minutes before the morning class bell, and each
-move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
-
+The Prisoner also wakes up at 10:00pm and the guards clock back in at 7pm so the prisoner only has 9 hours to escape and every move costs 1 hour. So you only have 9 moves to complete this.
+  
 ## Global Variables
 
-The most important variables are
-`haveCup` and `cupIsFull`, both
-booleans that track progress in the
-story. Depending on these two variables,
-some rooms will display different things. For example, if you walk into the
-library without the cup, it will prompt you to
-read. If you walk in with the cup, it will show
-the librarian filling the cup with coffee.
+I have 4 variables time, currentLocation, screwdriver, and guardKey.
 
-I also have numeric variables called `day` and `minute` which keep track of 
-time. `minute` starts at 0 and counts up
-with each move.
+currentLocaton: Will tell the current room the prisoner is in, so that the game can show the players their chocies.
 
-I have a little HUD map, and use a bunch of 
-boolean variables to control which
-rooms the player has discovered. A map is only displayed after the user
-visits it.
+time: Tracks the time during the escape. The game starts at 10pm and every move will cost 1 hour. If the time hits 7am the guards wake up and the player loses.
+
+screwdriver: A tool found in the storage room that willa llow the player to unlock the locker in the guards room.
+
+guardKey: The key needed to unlock the main gate and escape the prison. 
