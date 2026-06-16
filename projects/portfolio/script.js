@@ -27,3 +27,14 @@ function typeText(){
     }
 }
 
+typeText();
+
+const projects = [
+
+{
+    title:"Calculator",
+    image:"images/calculator.png",
+    description:
+    "A calculator built with JavaScript that performs basic arithmetic operations. This project helped me practice functions, event listeners, and DOM manipulation."
+},
+
