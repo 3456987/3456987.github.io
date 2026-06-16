@@ -32,17 +32,17 @@ typeText();
 const projects = [
 
 {
-    title:"Calculator",
+    title:"Recipes",
     image:"images/calculator.png",
     description:
-    "A calculator built with JavaScript that performs basic arithmetic operations. This project helped me practice functions, event listeners, and DOM manipulation."
+    "Recipes book, we made A web page using HTML to make a cook book of thing we love. This is my favorite HTML project I made becuase I got to show my favorite food and show others how to make it."
 },
 
 {
-    title:"Number Guessing Game",
+    title:"The Catch Game",
     image:"images/guessing-game.png",
     description:
-    "A game where the player guesses a random number. Through this project I learned variables, conditionals, loops, and user input."
+    "In this game we had to choose a partner and work with them, I choose my friend Davi because we work well together and we live near each other so we can work on it more often. I was very proud of this project becuase it was very fun to make and we had a good end product"
 }
 
 ];
