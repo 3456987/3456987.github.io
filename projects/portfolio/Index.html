@@ -8,15 +8,81 @@
 </head>
 <body>
 
-    <header id="header"></header>
+<header>
+    <h1>Jack's Portfolio</h1>
 
-    <section id="about"></section>
+    <nav>
+        <button onclick="showTab('about')">About Me</button>
+        <button onclick="showTab('learning')">What I Learned</button>
+        <button onclick="showTab('projects')">Projects</button>
+    </nav>
+</header>
 
-    <section id="projects"></section>
+<main>
 
-    <section id="contact"></section>
+    <section id="about" class="tab active">
 
-    <script src="script.js"></script>
+        <img src="images/me.jpg" alt="My Photo" class="profile">
+
+        <h2 id="typing"></h2>
+
+        <p>
+            Welcome to my portfolio! My name is Jack Rojas Duran.
+            This website showcases what I learned throughout this course
+            and highlights projects I created using HTML, CSS, and JavaScript.
+        </p>
+
+    </section>
+
+    <section id="learning" class="tab">
+
+        <h2>What I Learned</h2>
+
+        <h3>HTML</h3>
+
+        <div class="bar">
+            <div class="fill html-fill"></div>
+        </div>
+
+        <p>
+            I learned how to create webpages using headings, paragraphs,
+            images, links, lists, and forms. HTML taught me how websites
+            are structured and organized.
+        </p>
+
+        <h3>JavaScript</h3>
+
+        <div class="bar">
+            <div class="fill js-fill"></div>
+        </div>
+
+        <p>
+            I learned variables, arrays, loops, functions, event listeners,
+            and DOM manipulation. JavaScript allowed me to create interactive
+            websites and games.
+        </p>
+
+        <h3>How I Improved</h3>
+
+        <p>At the beginning of the course I had little experience creating
+            websites. Through projects and practice, I became more confident
+            writing code and solving problems independently.
+        </p>
+
+    </section>
+
+    <section id="projects" class="tab">
+
+        <h2>My Projects</h2>
+
+        <div id="projectContainer"></div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
 </body>
 </html>
 
