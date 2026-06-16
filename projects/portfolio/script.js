@@ -38,3 +38,12 @@ const projects = [
     "A calculator built with JavaScript that performs basic arithmetic operations. This project helped me practice functions, event listeners, and DOM manipulation."
 },
 
+{
+    title:"Number Guessing Game",
+    image:"images/guessing-game.png",
+    description:
+    "A game where the player guesses a random number. Through this project I learned variables, conditionals, loops, and user input."
+}
+
+];
+
