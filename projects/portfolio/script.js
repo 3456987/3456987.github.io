@@ -46,4 +46,23 @@ const projects = [
 }
 
 ];
+const container =
+document.getElementById("projectContainer");
+
+projects.forEach(project=>{
+
+    const card =
+    document.createElement("div");
+
+    card.classList.add("card");
+
+    card.innerHTML = `
+        <img src="${project.image}" alt="${project.title}">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+    `;
+
+    container.appendChild(card);
+
+});
 
