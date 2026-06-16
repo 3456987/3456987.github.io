@@ -19,12 +19,14 @@ const projects = [
     {
         title: "The Dropper Game",
         description: "In this game we had partners and we had to create a working game, me and my partner Davi choose the dropping game because it was a fun and new game idea. Im very proud of this because it took a lot of time and efforts to get this game working. ",
-        image: "calculator.jpg"
+        image: <img src="../../images/Dropper.png"
+		     alt="Dropper">
     },
     {
         title: "My Self Portrait",
         description: "This is where we were tasked to make a portrait of ourselves using JavaScript shapes and patterns. I'm very proud of thius because I put in a lot of time for it and at the end it really looked like me.",
-        image: "guessinggame.jpg"
+        image: <img src="../../images/portrait.png"
+		     alt="portrait">
     }
 ];
 
