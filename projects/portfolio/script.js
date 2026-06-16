@@ -33,14 +33,14 @@ const projects = [
 
 {
     title:"Recipes",
-    image:"images/calculator.png",
+    image:"../../images/Recipes.png",
     description:
     "Recipes book, we made A web page using HTML to make a cook book of thing we love. This is my favorite HTML project I made becuase I got to show my favorite food and show others how to make it."
 },
 
 {
     title:"The Catch Game",
-    image:"images/guessing-game.png",
+    image:"../../images/Dropper.png",
     description:
     "In this game we had to choose a partner and work with them, I choose my friend Davi because we work well together and we live near each other so we can work on it more often. I was very proud of this project becuase it was very fun to make and we had a good end product"
 }
